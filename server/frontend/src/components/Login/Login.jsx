@@ -48,8 +48,14 @@ const Login = ({ onClose }) => {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className='modalContainer'
+        className='modalContainer' style={{width:"50%"}}
       >
+        <div className="header" style={{display: "flex",flexDirection: "row", justifyContent: "space-between"}}>
+            <span className="text" style={{flexGrow:"1"}}>Login</span> 
+            <div style={{display: "flex",flexDirection: "row", justifySelf: "end", alignSelf: "start" }}>
+            </div>
+            <hr/>
+            </div>
           <form className="login_panel" style={{}} onSubmit={login}>
               <div>
               <span className="input_field">Username </span>

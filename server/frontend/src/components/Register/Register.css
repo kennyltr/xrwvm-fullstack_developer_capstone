@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: auto;
   margin-top: 2%;
-  background-color: darkturquoise;
+  background-color: white;
   min-width: 350px;
   width: 30%;
 }
@@ -22,8 +22,15 @@
 
 .input_field{
   height:40px;
-  width:200px;
-  margin:.5cm;
+  width:350px;
+  margin:.3cm;
+  font-size: medium;
+}
+
+.input_field2{
+  height:40px;
+  width:170px;
+  margin:.2cm;
   font-size: medium;
 }
 
@@ -32,6 +39,7 @@
   flex-direction:column;
   margin-top: 5%;
   margin-bottom: 5%;
+  align-items: center;
 }
 
 .submit{
@@ -39,7 +47,7 @@
   margin-right: 30%;
   cursor: pointer;
   font-size: large;
-  color: rgb(97, 64, 128);
+  color: rgb(16, 103, 117);
   border-radius: 10px;
   height:50px;
 }
@@ -50,14 +58,14 @@
 
 .header{
   font: 4em sans-serif;
-  color: white;
+  color: black;
   margin: .5cm;
 }
 
 .img_icon{
   width:40px;
-  margin:.1cm;
-  background-color:#0C9;
+  margin-right:.5cm;
+  background-color:rgb(16, 103, 117);
   color:#FFF;
   border-radius:50px;
   text-align:center;

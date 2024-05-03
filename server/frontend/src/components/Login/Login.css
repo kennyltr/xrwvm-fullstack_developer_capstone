@@ -5,8 +5,18 @@
   flex-direction: row;
   margin: auto;
   margin-top: 2%;
-  background-color: rgb(97, 64, 128);
+  background-color: rgb(16, 103, 117);
   align-items: flex-start;
+}
+
+.modalContainer{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 2%;
+  background-color: white;
+  min-width: 350px;
+  width: 30%;
 }
 
 .navitems{
@@ -16,6 +26,12 @@
   flex: 1;
   justify-content: flex-start;
   justify-self: center;
+}
+
+.header{
+  font: 4em sans-serif;
+  color: black;
+  margin: .5cm;
 }
 
 .nav_item{
@@ -45,7 +61,7 @@
 .action_button{
   cursor: pointer;
   font-size: large;
-  color: rgb(97, 64, 128);
+  color:  rgb(16, 103, 117);
   border-radius: 10px;
   height:40px;
   padding-left:.5cm;
@@ -83,4 +99,11 @@
   align-items: center;
   vertical-align: middle;
   
+}
+
+.loginlink {
+  color: black;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 10px
 }
