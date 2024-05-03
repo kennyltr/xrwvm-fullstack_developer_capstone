@@ -28,13 +28,13 @@ img{
 }
 .details{
   font-size: 20px;
-  color: rgb(97, 64, 128);
+  color: rgb(16, 103, 117);
   padding:20px;
 }
 
 .title{
   font-size: 20px;
-  background-color: rgb(97, 64, 128);
+  background-color: rgb(16, 103, 117);
   color: white;
   text-align: center;
   margin:20px;
@@ -42,7 +42,7 @@ img{
 }
 
 .homepage_links{
-  color:  rgb(97, 64, 128);
+  color:  white;
   padding: 25%;
   font-size: larger;
   }
@@ -51,6 +51,7 @@ img{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  color: white
 }
 
 .banner{
@@ -87,7 +88,7 @@ img{
 .nav_item{
   margin-left:15px;
   font-size: 20px;
-  color: black;
+  color: white;
   align-self: center;
 }
 
