@@ -43,8 +43,8 @@ const Register = () => {
         window.location.href = window.location.origin;
     }
     else if (json.error === "Already Registered") {
-      alert("The user with same username is already registered");
-      window.location.href = window.location.origin;
+      alert("A user with the same username/email is already registered");
+      window.location.href = window.location.origin+"/register";
     }
 };
 

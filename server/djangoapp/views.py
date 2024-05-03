@@ -49,14 +49,28 @@ def registration(request):
     first_name = data['firstName']
     last_name = data['lastName']
     email = data['email']
+    usernameexists = False
+    emailexists = False
 
-    user = User.objects.get(username=username)
-    if not user:
-        User.objects.create_user(username=username, password=password, first_name=first_name, last_name=last_name, email=email)
+    try:
+        User.objects.get(username=username)
+        usernameexists = True
+    except:
+        logger.debug("{} is new user".format(username))
+
+    try:
+        User.objects.get(email=email)
+        emailexists = True
+    except:
+        logger.debug("{} is new email".format(email))
+
+ 
+    if (usernameexists == False) and (emailexists == False):
+        user = User.objects.create_user(username=username, password=password, first_name=first_name, last_name=last_name, email=email)
         login(request, user)
         data = {"userName": username, "status": "Authenticated"}
     else:
-        data = {"userName": username, "error": "User already exists"}
+        data = {"userName": username, "error": "Already Registered"}
 
     return JsonResponse(data)
 
