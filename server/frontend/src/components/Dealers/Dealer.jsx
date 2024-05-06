@@ -6,6 +6,7 @@ import positive_icon from "../assets/positive.png"
 import neutral_icon from "../assets/neutral.png"
 import negative_icon from "../assets/negative.png"
 import review_icon from "../assets/reviewbutton.png"
+import loading from "../assets/kOnzy.gif"
 import Header from '../Header/Header';
 
 const Dealer = () => {
@@ -68,15 +69,15 @@ const Dealer = () => {
 
 
 return(
-  <div style={{margin:"20px"}}>
+  <div>
       <Header/>
-      <div style={{marginTop:"10px"}}>
+      <div style={{margin:"30px"}}>
       <h1 style={{color:"grey"}}>{dealer.full_name}{postReview}</h1>
       <h4  style={{color:"grey"}}>{dealer['city']},{dealer['address']}, Zip - {dealer['zip']}, {dealer['state']} </h4>
       </div>
-      <div class="reviews_panel">
+      <div class="reviews_panel" style={{margin:"30px"}}>
       {reviews.length === 0 && unreviewed === false ? (
-        <text>Loading Reviews....</text>
+        <img src={loading} style={{width:"50px", height:"50px"}} />
       ):  unreviewed === true? <div>No reviews yet! </div> :
       reviews.map(review => (
         <div className='review_panel'>
