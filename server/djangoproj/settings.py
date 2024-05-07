@@ -30,10 +30,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'https://kennyltr-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    'https://kennyltr-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'  # noqa: E501
     ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://kennyltr-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    'https://kennyltr-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'  # noqa: E501
     ]
 
 REST_FRAMEWORK = {
