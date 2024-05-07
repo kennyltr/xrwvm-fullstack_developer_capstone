@@ -50,13 +50,15 @@ def registration(request):
     try:
         User.objects.get(username=username)
         usernameexists = True
-    except:
+    except Exception as err:
+        print(f"Unexpected {err=}, {type(err)=}")
         logger.debug("{} is new user".format(username))
 
     try:
         User.objects.get(email=email)
         emailexists = True
-    except:
+    except Exception as err:
+        print(f"Unexpected {err=}, {type(err)=}")
         logger.debug("{} is new email".format(email))
 
     if (usernameexists is False) and (emailexists is False):
@@ -88,7 +90,7 @@ def get_cars(request):
     return JsonResponse({"CarModels": cars})
 
 
-# Update the `get_dealerships` render list of dealerships all by default, 
+# Update the `get_dealerships` render list of dealerships all by default,
 # particular state if state is passed
 def get_dealerships(request, state="All"):
     if (state == "All"):
@@ -134,7 +136,8 @@ def add_review(request):
         try:
             post_review(data)
             return JsonResponse({"status": 200})
-        except:
+        except Exception as err:
+            print(f"Unexpected {err=}, {type(err)=}")
             return JsonResponse({"status": 401,
                                  "message": "Error in posting review"})
     else:
