@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import "./Login.css";
-import Header from '../Header/Header';
+import Header from '../Header';
 
 const Login = ({ onClose }) => {
 

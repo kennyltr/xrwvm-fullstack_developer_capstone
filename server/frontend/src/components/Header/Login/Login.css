@@ -37,7 +37,7 @@
 .nav_item{
   margin-left:15px;
   font-size: 20px;
-  color: azure;
+  color: white;
   align-self: center;
 }
 
@@ -75,13 +75,13 @@
 
 .small_header{
   font: 30px sans-serif;
-  color:azure;
+  color:white;
   margin: .5cm;
 }
 
 .username{
   font: 30px sans-serif;
-  color:azure;
+  color:white;
   margin: .5cm;
   justify-content: 'flex-end';
   align-self:flex-end;
