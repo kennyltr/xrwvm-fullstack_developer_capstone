@@ -86,7 +86,9 @@ return(
           <div className="reviewer">{review.name} {review.car_make} {review.car_model} {review.car_year}</div>
         </div>
       ))}
-    </div>  
+      <br/>
+      <a href={`/searchcars/${id}`}>Search Cars</a>
+    </div>
   </div>
 )
 }

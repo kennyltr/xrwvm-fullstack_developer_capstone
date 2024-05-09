@@ -146,6 +146,7 @@ def add_review(request):
 
 
 def get_inventory(request, dealer_id):
+    data = request.GET
     if (dealer_id):
         if 'year' in data:
             endpoint = "/carsbyyear/"+str(dealer_id)+"/"+data['year']
